@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satya Booking - Indian Railways</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>Satya Booking</h1>
+            <span>Your Trusted Railway Booking Partner</span>
+        </div>
+        <nav>
+            <a href="/" aria-current="page">Search Trains</a>
+            <a href="/trains.html">Available Trains</a>
+            <a href="/booking.html">Passenger Details</a>
+            <a href="/payment.html">Payment</a>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="search-panel">
+            <h2>Book Train Tickets</h2>
+            <form id="searchForm" class="booking-form">
+                <div class="form-group">
+                    <label for="from">From Station</label>
+                    <select id="from" required>
+                        <option value="">Select station</option>
+                        <option value="NDLS">New Delhi (NDLS)</option>
+                        <option value="BCT">Mumbai Central (BCT)</option>
+                        <option value="MAS">Chennai Central (MAS)</option>
+                        <option value="HWH">Howrah Junction (HWH)</option>
+                        <option value="SBC">Bengaluru (SBC)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="to">To Station</label>
+                    <select id="to" required>
+                        <option value="">Select station</option>
+                        <option value="NDLS">New Delhi (NDLS)</option>
+                        <option value="BCT">Mumbai Central (BCT)</option>
+                        <option value="MAS">Chennai Central (MAS)</option>
+                        <option value="HWH">Howrah Junction (HWH)</option>
+                        <option value="SBC">Bengaluru (SBC)</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date">Journey Date</label>
+                        <input type="date" id="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="quota">Quota</label>
+                        <select id="quota" required>
+                            <option value="GN">General</option>
+                            <option value="TQ">Tatkal</option>
+                            <option value="LD">Ladies</option>
+                            <option value="SR">Senior Citizen</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="btn-primary">Search Trains</button>
+            </form>
+        </div>
+    </main>
+    <footer class="footer"></footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satya Booking - Payment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>Satya Booking</h1>
+            <span>Your Trusted Railway Booking Partner</span>
+        </div>
+        <nav>
+            <a href="/">Search</a>
+            <a href="/trains.html">Trains</a>
+            <a href="/booking.html">Booking</a>
+            <a href="/payment.html" aria-current="page">Payment</a>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="booking-summary" id="bookingSummary">
+            <!-- Booking summary will be populated by JavaScript -->
+        </div>
+        <form id="paymentForm" class="payment-form">
+            <div class="payment-methods">
+                <h2>Select Payment Method</h2>
+                <div class="payment-option">
+                    <input type="radio" id="upi" name="payment" value="upi" checked>
+                    <label for="upi">UPI</label>
+                    <div class="payment-details" id="upiDetails">
+                        <input type="text" placeholder="Enter UPI ID" required>
+                    </div>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="card" name="payment" value="card">
+                    <label for="card">Credit/Debit Card</label>
+                    <div class="payment-details" id="cardDetails" style="display: none;">
+                        <input type="text" placeholder="Card Number" pattern="[0-9]{16}">
+                        <input type="text" placeholder="MM/YY" pattern="[0-9]{2}/[0-9]{2}">
+                        <input type="text" placeholder="CVV" pattern="[0-9]{3}">
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn-primary">Pay Now</button>
+        </form>
+    </main>
+    <footer class="footer"></footer>
+    <script src="script.js"></script>
+</body>
+</html>
